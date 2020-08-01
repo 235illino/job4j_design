@@ -1,7 +1,6 @@
 language: java
 jdk:
   - openjdk14
-install: true
 
 # используем режим обычного пользователя для сборки проекта.
 sudo: false
@@ -17,7 +16,7 @@ notifications:
     recipients:
       -235illino@gmail.com
     on_success: never # default: change
-    on_failure: always # default: always
+    on_failure: never # default: always
 env:
   global:
     - CODECOV_TOKEN="7af6f1d7-f4d6-4789-93e7-2202b1971a19"
