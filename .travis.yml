@@ -2,8 +2,7 @@ language: java
 jdk:
   - openjdk14
 install: true
-script:
-  - mvn install
+
 # используем режим обычного пользователя для сборки проекта.
 sudo: false
 
@@ -21,4 +20,4 @@ notifications:
     on_failure: always # default: always
 env:
   global:
-    - CODECOV_TOKEN="dae9fd45-2d01-47fb-aaa4-212cff36e22a"
+    - CODECOV_TOKEN="7af6f1d7-f4d6-4789-93e7-2202b1971a19"
