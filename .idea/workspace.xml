@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="292dacfe-77c3-49e8-84a8-5238e9b61a2e" name="Default Changelist" comment="" />
+    <list default="true" id="292dacfe-77c3-49e8-84a8-5238e9b61a2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -18,6 +23,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1fV5CirQo0atAv5wlByNXIlKa56" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -26,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -40,13 +47,33 @@
       <option name="presentableId" value="Default" />
       <updated>1596290294686</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1596292227500</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596292227500</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="470" y="131" width="1024" height="852" key="#Project_Structure" timestamp="1596291778208">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="470" y="131" width="1024" height="852" key="#Project_Structure/54.27.1866.1053@54.27.1866.1053" timestamp="1596291778208" />
+    <state x="526" y="110" width="912" height="893" key="CommitChangelistDialog2" timestamp="1596292227360">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="526" y="110" width="912" height="893" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1596292227360" />
+    <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1596292019573">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl/54.27.1866.1053@54.27.1866.1053" timestamp="1596292019573" />
     <state width="1820" height="267" key="GridCell.Tab.0.bottom" timestamp="1596291660707">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
@@ -63,6 +90,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state width="1820" height="267" key="GridCell.Tab.0.right/54.27.1866.1053@54.27.1866.1053" timestamp="1596291660706" />
+    <state x="582" y="275" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1596292253580">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="582" y="275" width="800" height="563" key="Vcs.Push.Dialog.v2/54.27.1866.1053@54.27.1866.1053" timestamp="1596292253580" />
     <state x="296" y="257" width="1372" height="599" key="new project wizard" timestamp="1596290431910">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
