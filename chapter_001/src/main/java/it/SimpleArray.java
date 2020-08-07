@@ -5,30 +5,32 @@ import java.util.Iterator;
 import java.util.Objects;
 
 public class SimpleArray<T> implements Iterable<T> {
-    Object[] objects;
-    int position = 0;
+    private Object[] objects;
+    private int position = 0;
 
     public SimpleArray(int size) {
         this.objects = new Object[size];
     }
 
     public void add(T model) {
-        while (position < objects.length && !Objects.isNull(objects[position])) {
-            position++;
-        }
         objects[position] = model;
+        position++;
     }
 
     public void set(int index, T model) {
+        Objects.checkIndex(index, objects.length - 1);
         objects[index] = model;
     }
 
     public void remove(int index) {
+        Objects.checkIndex(index, objects.length - 1);
         objects[index] = null;
         System.arraycopy(objects, index + 1, objects, index, objects.length - 1 - index);
+        position--;
     }
 
     public T get(int index) {
+        Objects.checkIndex(index, objects.length - 1);
         return (T) objects[index];
     }
 
@@ -38,7 +40,7 @@ public class SimpleArray<T> implements Iterable<T> {
 
             @Override
             public boolean hasNext() {
-                return position < objects.length;
+                return position >= 0;
             }
 
             @Override
