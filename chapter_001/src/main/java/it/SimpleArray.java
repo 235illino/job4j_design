@@ -1,7 +1,7 @@
 package it;
 
-import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class SimpleArray<T> implements Iterable<T> {
@@ -18,33 +18,37 @@ public class SimpleArray<T> implements Iterable<T> {
     }
 
     public void set(int index, T model) {
-        Objects.checkIndex(index, objects.length - 1);
+        Objects.checkIndex(index, position);
         objects[index] = model;
     }
 
     public void remove(int index) {
-        Objects.checkIndex(index, objects.length - 1);
+        Objects.checkIndex(index, position);
         objects[index] = null;
         System.arraycopy(objects, index + 1, objects, index, objects.length - 1 - index);
         position--;
     }
 
     public T get(int index) {
-        Objects.checkIndex(index, objects.length - 1);
+        Objects.checkIndex(index, position);
         return (T) objects[index];
     }
 
     @Override
     public Iterator<T> iterator() {
+        int it = 0;
         return new Iterator<T>() {
 
             @Override
             public boolean hasNext() {
-                return position >= 0;
+                return it < position;
             }
 
             @Override
             public T next() {
+                if (!hasNext()) {
+                    throw new NoSuchElementException();
+                }
                 return (T) objects[position++];
             }
         };
