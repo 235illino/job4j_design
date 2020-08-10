@@ -15,7 +15,7 @@ public class SimpleLinked<E> implements Iterable<E> {
     }
 
     public E get(int index) {
-        SimpleLinked.Node x = null;
+        SimpleLinked.Node x = first;
         Objects.checkIndex(index, position);
         for (int i = 0; i < index; i++) {
             x = x.next;
@@ -62,6 +62,7 @@ public class SimpleLinked<E> implements Iterable<E> {
                     throw new ConcurrentModificationException();
                 }
                 E rsl = nIt.element;
+                nIt = nIt.next;
                 it++;
                 return  rsl;
             }
