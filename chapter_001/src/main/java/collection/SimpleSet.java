@@ -1,6 +1,7 @@
 package collection;
 
 import java.util.Iterator;
+import java.util.Objects;
 
 public class SimpleSet<T> implements Iterable<T>{
     private SimpleArray<T> array = new SimpleArray<>(10);
@@ -12,7 +13,7 @@ public class SimpleSet<T> implements Iterable<T>{
             position++;
         } else {
             for (int i = 0; i <= position; i++) {
-                if (!t.equals(array.get(i))) {
+                if (!contains(t, array.get(i))) {
                     array.add(t);
                     position++;
                 }
@@ -20,6 +21,9 @@ public class SimpleSet<T> implements Iterable<T>{
             }
         }
 
+    }
+    public boolean contains(T t, T i) {
+        return Objects.equals(t,i);
     }
 
     @Override
