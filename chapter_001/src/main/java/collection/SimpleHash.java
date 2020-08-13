@@ -8,13 +8,12 @@ public class SimpleHash<K, V> implements Iterable<K> {
     private final double LOAD_FACTOR = 0.75;
     private Node[] hashMap = new Node[16];
     private int countMod = 0;
-    private int index;
     private int entriesCount = 0;
 
     public boolean insert(K key, V value) {
         boolean insert = false;
         Node<K, V> node = new Node<>(key, value);
-        index = getIndex(key, hashMap);
+        int index = getIndex(key, hashMap);
         if (entriesCount > LOAD_FACTOR * hashMap.length) {
             hashMap = ensureCapa(hashMap);
         }
@@ -24,7 +23,9 @@ public class SimpleHash<K, V> implements Iterable<K> {
             countMod++;
             entriesCount++;
         } else if (Objects.equals(hashMap[index].key, key)) {
-            insert = false;
+            hashMap[index] = node;
+            countMod++;
+            insert = true;
         }
         return insert;
     }
@@ -69,7 +70,7 @@ public class SimpleHash<K, V> implements Iterable<K> {
 
             @Override
             public boolean hasNext() {
-                while (hashMap[hasNextCounter] == null && hasNextCounter < hashMap.length - 1) {
+                while (hashMap[hasNextCounter] == null && hasNextCounter < hashMap.length) {
                     hasNextCounter++;
                 }
                 return hashMap[hasNextCounter] != null;
