@@ -13,10 +13,10 @@ public class SimpleHash<K, V> implements Iterable<K> {
     public boolean insert(K key, V value) {
         boolean insert = false;
         Node<K, V> node = new Node<>(key, value);
-        int index = getIndex(key, hashMap);
         if (entriesCount > LOAD_FACTOR * hashMap.length) {
             hashMap = ensureCapa(hashMap);
         }
+        int index = getIndex(key, hashMap);
         if (hashMap[index] == null) {
             hashMap[index] = node;
             insert = true;
@@ -31,17 +31,28 @@ public class SimpleHash<K, V> implements Iterable<K> {
     }
 
     public void delete(K key) {
+
         int index = getIndex(key, hashMap);
-        if (Objects.equals(hashMap[index].key, key)) {
-            hashMap[index] = null;
-            entriesCount--;
-            countMod++;
+        if (hashMap[index] != null) {
+            if (Objects.equals(hashMap[index].key, key)) {
+                hashMap[index] = null;
+                entriesCount--;
+                countMod++;
+            }
+        } else {
+            throw new NullPointerException();
         }
     }
 
     public V get(K key) {
+        V val = null;
         int index = getIndex(key, hashMap);
-        return Objects.equals(hashMap[index].key, key) ? (V) hashMap[index].value : null;
+        if (hashMap[index] != null) {
+        val = Objects.equals(hashMap[index].key, key) ? (V) hashMap[index].value : null;
+        } else {
+            throw new NullPointerException();
+        }
+        return val;
     }
 
 
@@ -73,7 +84,7 @@ public class SimpleHash<K, V> implements Iterable<K> {
                 while (hashMap[hasNextCounter] == null && hasNextCounter < hashMap.length) {
                     hasNextCounter++;
                 }
-                return hashMap[hasNextCounter] != null;
+                return hashMap[hasNextCounter] != null && hasNextCounter < hashMap.length;
             }
 
             @Override
