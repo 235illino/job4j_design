@@ -30,18 +30,18 @@ public class SimpleHash<K, V> implements Iterable<K> {
         return insert;
     }
 
-    public void delete(K key) {
-
+    public boolean delete(K key) {
+        boolean del = false;
         int index = getIndex(key, hashMap);
         if (hashMap[index] != null) {
             if (Objects.equals(hashMap[index].key, key)) {
                 hashMap[index] = null;
                 entriesCount--;
                 countMod++;
+                del = true;
             }
-        } else {
-            throw new NullPointerException();
         }
+        return del;
     }
 
     public V get(K key) {
@@ -49,8 +49,6 @@ public class SimpleHash<K, V> implements Iterable<K> {
         int index = getIndex(key, hashMap);
         if (hashMap[index] != null) {
         val = Objects.equals(hashMap[index].key, key) ? (V) hashMap[index].value : null;
-        } else {
-            throw new NullPointerException();
         }
         return val;
     }
@@ -81,10 +79,10 @@ public class SimpleHash<K, V> implements Iterable<K> {
 
             @Override
             public boolean hasNext() {
-                while (hashMap[hasNextCounter] == null && hasNextCounter < hashMap.length) {
+                while (hasNextCounter < hashMap.length && hashMap[hasNextCounter] == null) {
                     hasNextCounter++;
                 }
-                return hashMap[hasNextCounter] != null && hasNextCounter < hashMap.length;
+                return hasNextCounter < hashMap.length && hashMap[hasNextCounter] == null;
             }
 
             @Override
