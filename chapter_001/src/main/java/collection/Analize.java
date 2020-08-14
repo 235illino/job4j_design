@@ -1,23 +1,24 @@
 package collection;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Analize {
     public Info diff(List<User> previous, List<User> current) {
         Info infoAnalize = new Info();
-        int dif = current.size() - previous.size();
-        if (dif > 0) {
-            infoAnalize.added = dif;
-        } else if (dif < 0) {
-            infoAnalize.deleted = Math.abs(dif);
-        }
-        for (int i = 0; i < previous.size(); i++) {
-            for (int j = 0; j < current.size(); j++) {
-                if (changed(previous.get(i), current.get(j))) {
-                    infoAnalize.changed++;
-                }
+        Map<Integer, String> map = new HashMap<>();
+        current.forEach(s -> map.put(s.id, s.name));
+        for (User user : previous) {
+            if (!map.containsKey(user.id)) {
+                infoAnalize.deleted++;
             }
+            if (!user.name.equals(map.get(user.id))) {
+                infoAnalize.changed++;
+            }
+
         }
+        infoAnalize.added = current.size() + infoAnalize.deleted - previous.size();
         return infoAnalize;
 
     }
@@ -40,7 +41,7 @@ public class Analize {
 
     }
 
-    public boolean changed (User pr, User cur) {
+    public boolean changed(User pr, User cur) {
         boolean change = false;
         if (!pr.name.equals(cur.name) && pr.id == cur.id) {
             change = true;

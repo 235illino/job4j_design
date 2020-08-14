@@ -58,13 +58,14 @@ public class AnalizeTest {
         List<Analize.User> current = Arrays.asList(
                 new Analize.User(111, "B"),
                 new Analize.User(222, "A"),
-                new Analize.User(333, "C")
+                new Analize.User(333, "C"),
+                new Analize.User(444, "C")
 
         );
         Analize analize = new Analize();
         Analize.Info info = analize.diff(previous, current);
         int rsl = info.changed;
-        int ext = 2;
+        int ext = 3;
         assertThat(ext, is(rsl));
     }
 }
