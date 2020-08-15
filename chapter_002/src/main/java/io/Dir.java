@@ -4,6 +4,7 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Objects;
 
 public class Dir {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class Dir {
         if (!file.isDirectory()) {
             throw new IllegalArgumentException(String.format("Not directory %s", file.getAbsoluteFile()));
         }
-        for (File f : file.listFiles())
+        for (File f : Objects.requireNonNull(file.listFiles()))
         {
            if (f.isFile()) {
                System.out.println(f.getName() + " " + f.getTotalSpace());
