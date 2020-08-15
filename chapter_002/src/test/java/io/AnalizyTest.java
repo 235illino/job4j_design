@@ -1,28 +1,34 @@
 package io;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 public class AnalizyTest {
+    @Rule
+    public TemporaryFolder folder = new TemporaryFolder();
 
     @Test
-    public void whenPairWithoutComment() {
-        String source = "/home/ilya/IdeaProjects/job4j_design/404.txt";
-        String target = "/home/ilya/IdeaProjects/job4j_design/405.txt";
+    public void whenPairWithoutComment() throws IOException {
+        File source = folder.newFile("source.txt");
+        File target = folder.newFile("target.txt");
+        try (PrintWriter out = new PrintWriter(source)) {
+            out.println("200 10:56:01\n" +
+                    "500 10:57:01\n" +
+                    "400 10:58:01\n" +
+                    "200 10:59:01");
+        }
         Analizy analizy = new Analizy();
-        analizy.unavailable(source, target);
+        analizy.unavailable(source.getAbsolutePath(), target.getAbsolutePath());
         StringBuilder sb = new StringBuilder();
         try (BufferedReader in = new BufferedReader(new FileReader(target))) {
             in.lines().forEach(sb::append);
-        } catch (Exception e) {
-            e.printStackTrace();
         }
-        String rsl = "10:57:01;10:59:01; 11:01:02;11:02:02;";
-        assertThat(sb.toString().trim(), is(rsl));
+        assertThat(sb.toString().trim(), is("10:57:01;10:59:01;"));
     }
 }
