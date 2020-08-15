@@ -1,0 +1,22 @@
+package io;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.SimpleFileVisitor;
+import java.util.List;
+
+public class Search {
+    public static void main(String[] args) throws IOException {
+        Path start = Paths.get("/home/ilya/IdeaProjects/job4j_design");
+        search(start, "txt").forEach(System.out::println);
+    }
+
+    public static List<Path> search(Path root, String ext) throws IOException {
+        SearchFiles searcher = new SearchFiles(p -> p.toFile().getName().contains(ext));
+        Files.walkFileTree(root, searcher);
+        return searcher.getPaths();
+    }
+
+}
