@@ -11,14 +11,7 @@ public class LogFilter {
             while (in.ready()) {
                 String s = in.readLine();
                 if (is404(s, 2)) {
-                    try {
-                        if (Integer.parseInt(s.split(" ")[getSize(s) - 1]) != 404) {
-                            rsl.add(s);
-                        }
-
-                    } catch (NumberFormatException e) {
-                    }
-
+                    rsl.add(s);
                 }
             }
         }
