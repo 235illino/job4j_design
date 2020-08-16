@@ -41,7 +41,9 @@ public class LogFilter {
                 new BufferedOutputStream(
                         new FileOutputStream(file)
                 ))) {
-            log.forEach(s -> out.write(s + "\n"));
+            StringBuilder sb = new StringBuilder();
+            log.forEach(sb::append);
+            out.write(sb.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
