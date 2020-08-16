@@ -19,7 +19,7 @@ public class AnalizyTest {
         File source = folder.newFile("source.txt");
         File target = folder.newFile("target.txt");
         try (PrintWriter out = new PrintWriter(source)) {
-            for (String s : Arrays.asList("200 10:56:01", "500 10:57:01", "400 10:58:01", "200 10:59:01")) {
+            for (String s : Arrays.asList("400 10:56:01", "500 10:57:01", "400 10:58:01", "200 10:59:01")) {
                 out.println(s);
             }
         }
@@ -29,6 +29,6 @@ public class AnalizyTest {
         try (BufferedReader in = new BufferedReader(new FileReader(target))) {
             in.lines().forEach(sb::append);
         }
-        assertThat(sb.toString().trim(), is("10:57:01;10:59:01;"));
+        assertThat(sb.toString().trim(), is("10:56:01;10:59:01;"));
     }
 }

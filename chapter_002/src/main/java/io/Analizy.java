@@ -12,16 +12,16 @@ public class Analizy {
                      new BufferedOutputStream(
                              new FileOutputStream(target)
                      ))) {
-            int change = 0;
+            boolean change = false;
             while (in.ready()) {
                 String s = in.readLine();
-                if (isUnavai(s) && change == 0) {
+                if (!change && isUnavai(s)) {
                     rsl.add(s.split(" ")[1] + ";");
-                    change++;
+                    change = true;
                 }
-                if (!isUnavai(s) && change > 0) {
+                if (change && !isUnavai(s)) {
                     rsl.add(s.split(" ")[1] + "; ");
-                    change = 0;
+                    change = false;
                 }
             }
             StringBuilder sb = new StringBuilder();
@@ -29,10 +29,6 @@ public class Analizy {
             out.write(sb.toString());
         }
     }
-
-
-
-
 
     private boolean isUnavai(String s) {
         return Integer.parseInt(s.split(" ")[0]) == 400 || Integer.parseInt(s.split(" ")[0]) == 500;
