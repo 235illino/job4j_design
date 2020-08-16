@@ -18,7 +18,7 @@ public class Dir {
         for (File f : Objects.requireNonNull(file.listFiles()))
         {
            if (f.isFile()) {
-               System.out.println(f.getName() + " " + f.getTotalSpace());
+               System.out.println(f.getName() + " " + f.length());
            }
         }
     }
