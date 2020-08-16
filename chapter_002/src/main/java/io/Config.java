@@ -14,11 +14,8 @@ public class Config {
     }
 
     public void load() {
-        StringJoiner out = new StringJoiner(System.lineSeparator());
         try (BufferedReader read = new BufferedReader(new FileReader(this.path))) {
-            read.lines().forEach(out::add);
-
-              List<String> tmp = out.toString().lines().filter(s -> s.contains("=")).collect(Collectors.toList());
+              List<String> tmp = read.lines().filter(s -> s.contains("=")).collect(Collectors.toList());
             for (String s : tmp) {
                 values.put(s.split("=")[0], s.split("=")[1]);
             }
