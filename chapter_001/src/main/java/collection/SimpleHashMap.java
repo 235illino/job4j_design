@@ -4,8 +4,8 @@ import java.util.*;
 
 public class SimpleHashMap<K, V> implements Iterable<K>{
     private int size;
-    private int DEFAULT_CAPACITY = 16;
-    private SimpleEntry<K, V>[] values = new SimpleEntry[DEFAULT_CAPACITY];
+    private final int DEFAULT_CAPACITY = 16;
+    private SimpleEntry<K, V>[] values;
     private int countMod = 0;
 
 
@@ -30,7 +30,7 @@ public class SimpleHashMap<K, V> implements Iterable<K>{
         }
         if (insert) {
             ensureCapa();
-            values[size++] = new SimpleEntry<K, V>(key, value);
+            values[size++] = new SimpleEntry<>(key, value);
         }
         countMod++;
     }
@@ -56,15 +56,13 @@ public class SimpleHashMap<K, V> implements Iterable<K>{
     }
 
     private void condenseArray(int start) {
-        for (int i = start; i < size; i++) {
-            values[i] = values[i + 1];
-        }
+        if (size - start >= 0) System.arraycopy(values, start + 1, values, start, size - start);
     }
 
 
     @Override
     public Iterator iterator() {
-        Iterator<V> iterator = new Iterator<>() {
+        return new Iterator<V>() {
             private int innerCountMod = countMod;
             private  int hasNextCounter = 0;
 
@@ -89,6 +87,5 @@ public class SimpleHashMap<K, V> implements Iterable<K>{
                 return element;
             }
         };
-        return iterator;
     }
 }
