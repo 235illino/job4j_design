@@ -9,7 +9,7 @@ public class ConfigTest {
 
     @Test
     public void whenPairWithoutComment() {
-        String path = "/home/ilya/IdeaProjects/job4j_design/404.txt";
+        String path = "/home/ilya/IdeaProjects/job4j_design/406.txt";
         Config config = new Config(path);
         config.load();
         assertThat(
