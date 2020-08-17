@@ -15,11 +15,8 @@ public class Config {
 
     public void load() {
         try (BufferedReader read = new BufferedReader(new FileReader(this.path))) {
-              List<String> tmp = read.lines().filter(s -> s.contains("=")).collect(Collectors.toList());
-            for (String s : tmp) {
-                values.put(s.split("=")[0], s.split("=")[1]);
-            }
-
+              read.lines().filter(s -> s.contains("=")).collect(Collectors.toList())
+                      .forEach(s -> values.put(s.split("=")[0], s.split("=")[1]));
         } catch (Exception e) {
             e.printStackTrace();
         }
