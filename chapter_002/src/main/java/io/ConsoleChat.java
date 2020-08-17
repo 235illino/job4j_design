@@ -14,8 +14,8 @@ public class ConsoleChat {
                      new BufferedOutputStream(
                              new FileOutputStream(logPath)));
              BufferedReader inAns = new BufferedReader(new FileReader(ansPath))) {
-
-            while (consoleReder.ready()) {
+            System.out.println("write smth");
+            while (consoleReder.read() != -1) {
                 String s = consoleReder.readLine();
                 if (s.equals("стоп")) {
                     answers.add(s);
