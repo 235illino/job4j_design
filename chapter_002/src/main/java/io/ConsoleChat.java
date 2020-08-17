@@ -9,11 +9,13 @@ public class ConsoleChat {
 
     public void speaking(String logPath, String ansPath) {
 
-        try (BufferedReader consoleReder = new BufferedReader(new InputStreamReader(System.in));
+        try (BufferedReader consoleReder
+                     = new BufferedReader(new InputStreamReader(System.in));
              PrintWriter out = new PrintWriter(
                      new BufferedOutputStream(
                              new FileOutputStream(logPath)));
-             BufferedReader inAns = new BufferedReader(new FileReader(ansPath))) {
+             BufferedReader inAns
+                     = new BufferedReader(new FileReader(ansPath))) {
             System.out.println("write smth");
             while (consoleReder.ready()) {
                 String s = consoleReder.readLine();
