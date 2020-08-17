@@ -3,27 +3,13 @@ package io;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 public class checkBuf {
-    public static void main(String[] args) {
-        List<String> st = new ArrayList<>();
-        try {
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        while (reader.ready()){
-            st.add(reader.readLine());
-            if (st.get(0).equals("0")) {
-                reader.close();
-                break;
-            }
-        }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        st.forEach(System.out::println);
-        System.out.println("ghb");
-
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter some number: ");
+        int input = Integer.parseInt(in.readLine());
+        System.out.println("Your input is: " + input);
     }
 }
