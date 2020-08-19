@@ -2,10 +2,14 @@ package io;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ConsoleChat {
     private List<String> answers = new ArrayList<>();
+    private final String BREAK_SPEAKING = "стоп";
+    private final String STOP_SPEAKING = "закончить";
 
     public void speaking(String logPath, String ansPath) {
 
@@ -17,15 +21,16 @@ public class ConsoleChat {
              BufferedReader inAns
                      = new BufferedReader(new FileReader(ansPath))) {
             System.out.println("write smth");
+            List<String> listAns = Arrays.stream(inAns.readLine().split(" ")).collect(Collectors.toList());
             while (consoleReder.ready()) {
                 String s = consoleReder.readLine();
-                if (s.equals("стоп")) {
+                if (s.equals(BREAK_SPEAKING)) {
                     answers.add(s);
-                } else if (s.equals("закончить")) {
+                } else if (s.equals(STOP_SPEAKING)) {
                     answers.add(s);
                     break;
                 } else {
-                    System.out.println(generateAnswer(inAns));
+                    System.out.println(generateAnswer(listAns));
                     answers.add(s);
                 }
             }
@@ -39,13 +44,8 @@ public class ConsoleChat {
 
     }
 
-
-    public String generateAnswer(BufferedReader inAns) throws IOException {
-        List<String> tmp = new ArrayList<>();
-        while (inAns.ready()) {
-            tmp.add(inAns.readLine());
-        }
-        String s = tmp.get((int) (Math.random() * (tmp.size() - 1)));
+    public String generateAnswer(List<String> list) throws IOException {
+        String s = list.get((int) (Math.random() * (list.size() - 1)));
         answers.add(s);
         return s;
     }
