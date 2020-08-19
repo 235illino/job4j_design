@@ -3,7 +3,7 @@ package collection;
 import java.util.Iterator;
 import java.util.Objects;
 
-public class SimpleSet<T> implements Iterable<T>{
+public class SimpleSet<T> implements Iterable<T> {
     private SimpleArray<T> array = new SimpleArray<>(10);
     private int position = 0;
 
@@ -23,7 +23,7 @@ public class SimpleSet<T> implements Iterable<T>{
 
     }
     public boolean contains(T t, T i) {
-        return Objects.equals(t,i);
+        return Objects.equals(t, i);
     }
 
     @Override

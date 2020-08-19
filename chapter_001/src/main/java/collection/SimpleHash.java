@@ -5,7 +5,7 @@ import java.util.*;
 import static java.util.Objects.hash;
 
 public class SimpleHash<K, V> implements Iterable<K> {
-    private final double LOAD_FACTOR = 0.75;
+    private final double loadFactor = 0.75;
     private Node[] hashMap = new Node[16];
     private int countMod = 0;
     private int entriesCount = 0;
@@ -13,7 +13,7 @@ public class SimpleHash<K, V> implements Iterable<K> {
     public boolean insert(K key, V value) {
         boolean insert = false;
         Node<K, V> node = new Node<>(key, value);
-        if (entriesCount > LOAD_FACTOR * hashMap.length) {
+        if (entriesCount > loadFactor * hashMap.length) {
             hashMap = ensureCapa(hashMap);
         }
         int index = getIndex(key, hashMap);
@@ -111,9 +111,10 @@ public class SimpleHash<K, V> implements Iterable<K> {
             this.value = value;
         }
 
-        @Override
-        public int hashCode() {
-            return hash(key, value);
-        }
+//        @Override
+//        public int hashCode() {
+//
+//            return hash(key, value);
+//        }
     }
 }

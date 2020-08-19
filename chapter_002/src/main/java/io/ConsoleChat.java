@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 
 public class ConsoleChat {
     private List<String> answers = new ArrayList<>();
-    private final String BREAK_SPEAKING = "стоп";
-    private final String STOP_SPEAKING = "закончить";
+    private final static String BREAK_SPEAKING = "стоп";
+    private final static String STOP_SPEAKING = "закончить";
 
     public void speaking(String logPath, String ansPath) {
 

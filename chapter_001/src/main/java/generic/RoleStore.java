@@ -11,7 +11,7 @@ public class RoleStore implements Store<User> {
 
     @Override
     public boolean replace(String id, User model) {
-        return  store.replace(id,model);
+        return  store.replace(id, model);
     }
 
     @Override
