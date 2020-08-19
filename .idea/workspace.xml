@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="292dacfe-77c3-49e8-84a8-5238e9b61a2e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit3 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectId" id="1fV5CirQo0atAv5wlByNXIlKa56" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chapter_001/src/main/java/it" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="io" />
+      <recent name="collection" />
+      <recent name="it" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chapter_001/src/main/java/it" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io" />
+      <recent name="generic" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.User">
+    <configuration name="CheckBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true" show_console_on_std_out="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="14" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="io.CheckBuf" />
+      <module name="chapter_002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2" />
+    </configuration>
+    <configuration name="ConsoleChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.ConsoleChat" />
+      <module name="chapter_002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.User" />
+      <module name="chapter_001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="checkBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.checkBuf" />
+      <module name="chapter_004" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="checkBuf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.checkBuf" />
+      <module name="chapter_002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter_002" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io" />
+      <option name="MAIN_CLASS_NAME" value="io.ConfigTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConsoleChat" />
+      <item itemvalue="Application.checkBuf (1)" />
+      <item itemvalue="JUnit.ConfigTest" />
+      <item itemvalue="Application.User" />
+      <item itemvalue="Application.CheckBuf" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.User" />
+        <item itemvalue="JUnit.ConfigTest" />
+        <item itemvalue="Application.ConsoleChat" />
+        <item itemvalue="Application.CheckBuf" />
+        <item itemvalue="Application.checkBuf (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="292dacfe-77c3-49e8-84a8-5238e9b61a2e" name="Default Changelist" comment="" />
+      <created>1596290294686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596290294686</updated>
+    </task>
+    <task id="LOCAL-00042" summary="readF">
+      <created>1597344928024</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1597344928024</updated>
+    </task>
+    <task id="LOCAL-00043" summary="8. Реализовать собственную структуру данных - HashMap [#332085]">
+      <created>1597393814798</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1597393814798</updated>
+    </task>
+    <task id="LOCAL-00044" summary="2. Статистику по коллекции. [#332044]">
+      <created>1597396950499</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1597396950499</updated>
+    </task>
+    <task id="LOCAL-00045" summary="8. Реализовать собственную структуру данных - HashMap [#332085]">
+      <created>1597414422624</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1597414422624</updated>
+    </task>
+    <task id="LOCAL-00046" summary="0.3. BufferedReader. [#332099]">
+      <created>1597417598647</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1597417598647</updated>
+    </task>
+    <task id="LOCAL-00047" summary="1. Читаем файл конфигурации [#332104]">
+      <created>1597423413180</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1597423413180</updated>
+    </task>
+    <task id="LOCAL-00048" summary="2. Анализ доступности сервера. [#332105]">
+      <created>1597432732937</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1597432732937</updated>
+    </task>
+    <task id="LOCAL-00049" summary="3.0. Тестирование IO [#332096]">
+      <created>1597509772679</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1597509772679</updated>
+    </task>
+    <task id="LOCAL-00050" summary="4.0. File [#332101]">
+      <created>1597515811034</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1597515811035</updated>
+    </task>
+    <task id="LOCAL-00051" summary="4.0. File [#332101]">
+      <created>1597515847213</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1597515847214</updated>
+    </task>
+    <task id="LOCAL-00052" summary="4.1. Сканирование файловой системы. [#332095]">
+      <created>1597520129202</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1597520129202</updated>
+    </task>
+    <task id="LOCAL-00053" summary="4.1. Сканирование файловой системы. [#332095]">
+      <created>1597568152160</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1597568152160</updated>
+    </task>
+    <task id="LOCAL-00054" summary="4.0. File [#332101]">
+      <created>1597568275949</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1597568275949</updated>
+    </task>
+    <task id="LOCAL-00055" summary="3.0. Тестирование IO [#332096]">
+      <created>1597568701656</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1597568701656</updated>
+    </task>
+    <task id="LOCAL-00056" summary="2. Анализ доступности сервера. [#332105]">
+      <created>1597570311180</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1597570311180</updated>
+    </task>
+    <task id="LOCAL-00057" summary="1. Читаем файл конфигурации [#332104]">
+      <created>1597570975141</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1597570975141</updated>
+    </task>
+    <task id="LOCAL-00058" summary="0.3. BufferedReader. [#332099]">
+      <created>1597576062278</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1597576062278</updated>
+    </task>
+    <task id="LOCAL-00059" summary="0.3. BufferedReader. [#332099]">
+      <created>1597576099480</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1597576099480</updated>
+    </task>
+    <task id="LOCAL-00060" summary="0.4. BufferedOutputStream [#332100]">
+      <created>1597576408290</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1597576408290</updated>
+    </task>
+    <task id="LOCAL-00061" summary="0.2. FileInputStream [#332108]">
+      <created>1597576579301</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1597576579301</updated>
+    </task>
+    <task id="LOCAL-00062" summary="2. Анализ доступности сервера. [#332105]">
+      <created>1597581847189</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1597581847189</updated>
+    </task>
+    <task id="LOCAL-00063" summary="0.3. BufferedReader. [#332099]">
+      <created>1597599866246</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1597599866246</updated>
+    </task>
+    <task id="LOCAL-00064" summary="4.2. Поиск дубликатов [#332103]">
+      <created>1597600783992</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1597600783992</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Dir">
+      <created>1597601658477</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1597601658477</updated>
+    </task>
+    <task id="LOCAL-00066" summary="5. Валидация параметров запуска. [#332097]">
+      <created>1597601737175</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1597601737175</updated>
+    </task>
+    <task id="LOCAL-00067" summary="5.1. Именованные аргументы [#332102]">
+      <created>1597604169066</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1597604169066</updated>
+    </task>
+    <task id="LOCAL-00068" summary="5. Валидация параметров запуска. [#332097]">
+      <created>1597657136959</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1597657136959</updated>
+    </task>
+    <task id="LOCAL-00069" summary="1. Читаем файл конфигурации [#332104]">
+      <created>1597657832453</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1597657832453</updated>
+    </task>
+    <task id="LOCAL-00070" summary="007">
+      <created>1597669627599</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1597669627599</updated>
+    </task>
+    <task id="LOCAL-00071" summary="0071">
+      <created>1597674036061</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1597674036061</updated>
+    </task>
+    <task id="LOCAL-00072" summary="00712">
+      <created>1597674900022</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1597674900022</updated>
+    </task>
+    <task id="LOCAL-00073" summary="00">
+      <created>1597675203573</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1597675203573</updated>
+    </task>
+    <task id="LOCAL-00074" summary="00">
+      <created>1597676611806</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1597676611806</updated>
+    </task>
+    <task id="LOCAL-00075" summary="00">
+      <created>1597677035768</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1597677035768</updated>
+    </task>
+    <task id="LOCAL-00076" summary="11">
+      <created>1597677316812</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1597677316812</updated>
+    </task>
+    <task id="LOCAL-00077" summary="212">
+      <created>1597677700578</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1597677700578</updated>
+    </task>
+    <task id="LOCAL-00078" summary="5.2. Архивировать проект [#332106]">
+      <created>1597679440029</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1597679440029</updated>
+    </task>
+    <task id="LOCAL-00079" summary="args name">
+      <created>1597679459110</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1597679459110</updated>
+    </task>
+    <task id="LOCAL-00080" summary="pom">
+      <created>1597693250421</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1597693250422</updated>
+    </task>
+    <task id="LOCAL-00081" summary="6. Кодировка. [#332107]">
+      <created>1597696178545</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1597696178546</updated>
+    </task>
+    <task id="LOCAL-00082" summary="6. Кодировка. [#332107]">
+      <created>1597696298044</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1597696298044</updated>
+    </task>
+    <task id="LOCAL-00083" summary="6. Кодировка. [#332107]">
+      <created>1597696396192</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1597696396192</updated>
+    </task>
+    <task id="LOCAL-00084" summary="new pom">
+      <created>1597696614140</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1597696614140</updated>
+    </task>
+    <task id="LOCAL-00085" summary="new pom">
+      <created>1597697611688</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1597697611689</updated>
+    </task>
+    <task id="LOCAL-00086" summary="new pom">
+      <created>1597697713019</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1597697713019</updated>
+    </task>
+    <task id="LOCAL-00087" summary="new pom">
+      <created>1597697791843</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1597697791843</updated>
+    </task>
+    <task id="LOCAL-00088" summary="6. Кодировка. [#332107]">
+      <created>1597851675045</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1597851675046</updated>
+    </task>
+    <task id="LOCAL-00089" summary="new building travis">
+      <created>1597853263082</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1597853263082</updated>
+    </task>
+    <task id="LOCAL-00090" summary="new building travis">
+      <created>1597853413943</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1597853413943</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="8. Реализовать собственную структуру данных - HashMap [#332085]" />
+    <MESSAGE value="4.1. Сканирование файловой системы. [#332095]" />
+    <MESSAGE value="4.0. File [#332101]" />
+    <MESSAGE value="3.0. Тестирование IO [#332096]" />
+    <MESSAGE value="0.4. BufferedOutputStream [#332100]" />
+    <MESSAGE value="0.2. FileInputStream [#332108]" />
+    <MESSAGE value="2. Анализ доступности сервера. [#332105]" />
+    <MESSAGE value="0.3. BufferedReader. [#332099]" />
+    <MESSAGE value="4.2. Поиск дубликатов [#332103]" />
+    <MESSAGE value="Dir" />
+    <MESSAGE value="5.1. Именованные аргументы [#332102]" />
+    <MESSAGE value="5. Валидация параметров запуска. [#332097]" />
+    <MESSAGE value="1. Читаем файл конфигурации [#332104]" />
+    <MESSAGE value="007" />
+    <MESSAGE value="0071" />
+    <MESSAGE value="00712" />
+    <MESSAGE value="00" />
+    <MESSAGE value="11" />
+    <MESSAGE value="212" />
+    <MESSAGE value="5.2. Архивировать проект [#332106]" />
+    <MESSAGE value="args name" />
+    <MESSAGE value="pom" />
+    <MESSAGE value="new pom" />
+    <MESSAGE value="6. Кодировка. [#332107]" />
+    <MESSAGE value="new building travis" />
+    <option name="LAST_COMMIT_MESSAGE" value="new building travis" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="616" y="235" width="732" height="644" key="#Inspections" timestamp="1597696874170">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="616" y="235" width="732" height="644" key="#Inspections/54.27.1866.1053@54.27.1866.1053" timestamp="1597696874170" />
+    <state x="582" y="215" width="800" height="684" key="#Intentions" timestamp="1597568625660">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="582" y="215" width="800" height="684" key="#Intentions/54.27.1866.1053@54.27.1866.1053" timestamp="1597568625660" />
+    <state x="688" y="378" width="588" height="357" key="#Notifications" timestamp="1597694150129">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="688" y="378" width="588" height="357" key="#Notifications/54.27.1866.1053@54.27.1866.1053" timestamp="1597694150129" />
+    <state x="470" y="131" width="1024" height="852" key="#Project_Structure" timestamp="1597692072091">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="470" y="131" width="1024" height="852" key="#Project_Structure/54.27.1866.1053@54.27.1866.1053" timestamp="1597692072091" />
+    <state x="430" y="275" width="1084" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597695458069">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="430" y="275" width="1084" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1597695458069" />
+    <state x="154" y="127" width="1666" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596364904063">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="154" y="127" width="1666" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1596364904063" />
+    <state x="659" y="355" width="674" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596353910216">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="659" y="355" width="674" height="403" key="#com.intellij.fileTypes.FileTypeChooser/54.27.1866.1053@54.27.1866.1053" timestamp="1596353910216" />
+    <state x="885" y="391" width="565" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1597570093401">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="885" y="391" width="565" height="576" key="#com.intellij.ide.util.MemberChooser/54.27.1866.1053@54.27.1866.1053" timestamp="1597570093401" />
+    <state x="690" y="223" width="583" height="668" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1596357042121">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="690" y="223" width="583" height="668" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1596357042121" />
+    <state x="577" y="478" width="810" height="158" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597417716654">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="577" y="478" width="810" height="158" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1597417716654" />
+    <state x="740" y="421" width="494" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1596739010855">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="740" y="421" width="494" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/54.27.1866.1053@54.27.1866.1053" timestamp="1596739010855" />
+    <state x="740" y="435" width="484" height="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1597417727362">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="740" y="435" width="484" height="244" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/54.27.1866.1053@54.27.1866.1053" timestamp="1597417727362" />
+    <state x="723" y="406" width="535" height="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1597693272931">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="723" y="406" width="535" height="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/54.27.1866.1053@54.27.1866.1053" timestamp="1597693272931" />
+    <state x="679" y="115" width="912" height="893" key="CommitChangelistDialog2" timestamp="1597853413858">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="679" y="115" width="912" height="893" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1597853413858" />
+    <state x="231" y="121" width="1492" height="879" key="DiffContextDialog" timestamp="1596292458400">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="231" y="121" width="1492" height="879" key="DiffContextDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1596292458400" />
+    <state x="758" y="297" width="495" height="520" key="FileChooserDialogImpl" timestamp="1597691959578">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="758" y="297" width="495" height="520" key="FileChooserDialogImpl/54.27.1866.1053@54.27.1866.1053" timestamp="1597691959578" />
+    <state width="1820" height="267" key="GridCell.Tab.0.bottom" timestamp="1597853567160">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state width="1820" height="267" key="GridCell.Tab.0.bottom/54.27.1866.1053@54.27.1866.1053" timestamp="1597853567160" />
+    <state width="1820" height="267" key="GridCell.Tab.0.center" timestamp="1597853567160">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state width="1820" height="267" key="GridCell.Tab.0.center/54.27.1866.1053@54.27.1866.1053" timestamp="1597853567160" />
+    <state width="1820" height="267" key="GridCell.Tab.0.left" timestamp="1597853567160">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state width="1820" height="267" key="GridCell.Tab.0.left/54.27.1866.1053@54.27.1866.1053" timestamp="1597853567160" />
+    <state width="1820" height="267" key="GridCell.Tab.0.right" timestamp="1597853567160">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state width="1820" height="267" key="GridCell.Tab.0.right/54.27.1866.1053@54.27.1866.1053" timestamp="1597853567160" />
+    <state x="231" y="121" width="1492" height="879" key="MergeDialog" timestamp="1597697749182">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="231" y="121" width="1492" height="879" key="MergeDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1597697749182" />
+    <state x="618" y="316" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1597697749184">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="618" y="316" width="728" height="482" key="MultipleFileMergeDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1597697749184" />
+    <state x="476" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1597695543004">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="476" y="188" width="1022" height="737" key="SettingsEditor/54.27.1866.1053@54.27.1866.1053" timestamp="1597695543004" />
+    <state x="582" y="275" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1597853415385">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="582" y="275" width="800" height="563" key="Vcs.Push.Dialog.v2/54.27.1866.1053@54.27.1866.1053" timestamp="1597853415385" />
+    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596292429705">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/54.27.1866.1053@54.27.1866.1053" timestamp="1596292429705" />
+    <state x="733" y="360" width="495" height="414" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597603508367">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="733" y="360" width="495" height="414" key="com.intellij.testIntegration.createTest.CreateTestDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1597603508367" />
+    <state x="1172" y="290" width="524" height="492" key="extract.method.dialog" timestamp="1597571933320">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="1172" y="290" width="524" height="492" key="extract.method.dialog/54.27.1866.1053@54.27.1866.1053" timestamp="1597571933320" />
+    <state x="296" y="257" width="1372" height="599" key="new project wizard" timestamp="1596357023005">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="296" y="257" width="1372" height="599" key="new project wizard/54.27.1866.1053@54.27.1866.1053" timestamp="1596357023005" />
+    <state x="743" y="300" width="477" height="514" key="refactoring.ChangeSignatureDialog" timestamp="1597519748548">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="743" y="300" width="477" height="514" key="refactoring.ChangeSignatureDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1597519748548" />
+    <state x="651" y="252" width="672" height="677" key="run.anything.popup" timestamp="1597687719049">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="651" y="252" width="672" height="677" key="run.anything.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1597687719049" />
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1596358702420">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1596358702420" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/job4j_design$ConsoleChat.ic" NAME="ConsoleChat Coverage Results" MODIFIED="1597693415187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/job4j_design$checkBuf.ic" NAME="checkBuf Coverage Results" MODIFIED="1597694657628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.*</FILTER>
+    </SUITE>
+  </component>
+</project>
