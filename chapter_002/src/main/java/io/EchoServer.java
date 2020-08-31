@@ -1,11 +1,17 @@
 package io;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class EchoServer {
-    private final static String BYE = "Bye";
+
+    private final static String EXIT = "msg=Exit";
+    private final static String HELLO = "msg=Hello";
+
     public static void main(String[] args) throws IOException {
         try (ServerSocket server = new ServerSocket(9000)) {
             boolean isTurnOn = true;
@@ -16,13 +22,16 @@ public class EchoServer {
                              new InputStreamReader(socket.getInputStream()))) {
                     String str;
                     while (!(str = in.readLine()).isEmpty()) {
-                        if (str.contains(BYE)) {
+                        if (str.contains(HELLO)) {
+                            out.write("Hello, dear friend!".getBytes());
+                        } else if (str.contains(EXIT)) {
                             isTurnOn = false;
                             break;
+                        } else {
+                            out.write(str.split("=")[1].replaceFirst(" HTTP/1.1", "").getBytes());
                         }
-                        System.out.println(str);
                     }
-                    out.write("HTTP/1.1 200 OK\r\n\\".getBytes());
+
                 }
             }
         }
