@@ -2,8 +2,12 @@ package io;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Student {
     private final boolean sex;
@@ -18,6 +22,26 @@ public class Student {
         this.name = name;
         this.university = university;
         this.hobbies = hobbies;
+    }
+
+    public boolean isSex() {
+        return sex;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public University getUniversity() {
+        return university;
+    }
+
+    public String[] getHobbies() {
+        return hobbies;
     }
 
     @Override
@@ -42,7 +66,7 @@ public class Student {
                 "{"
                         + "\"sex\":false,"
                         + "\"id\":123,"
-                        + "\"phone\":\"Ivan\""
+                        + "\"name\":\"Ivan\""
                         + "\"university\":"
                         + "{"
                         + "\"accreditment\":4,"
@@ -52,5 +76,22 @@ public class Student {
                         + "}";
         final Student studentMod = gson.fromJson(personJson, Student.class);
         System.out.println(studentMod);
+
+        JSONObject jsonObject = new JSONObject();
+        JSONObject jsonUniver = new JSONObject("{\"accreditment\":\"4}");
+        List<String> list = new ArrayList<>();
+        list.add("reading");
+        list.add("badminton");
+        JSONArray jsonHobbies = new JSONArray(list);
+
+        jsonObject.put("sex", student.isSex());
+        jsonObject.put("id", student.getId());
+        jsonObject.put("name", student.getName());
+        jsonObject.put("university", jsonUniver);
+        jsonObject.put("statuses", jsonHobbies);
+
+        System.out.println(jsonObject.toString());
+        System.out.println(new JSONObject(student).toString());
+
     }
 }
