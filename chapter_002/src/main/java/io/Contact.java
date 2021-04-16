@@ -23,10 +23,7 @@ public class Contact implements Serializable {
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "id=" + id +
-                ", email='" + email + '\'' +
-                '}';
+        return "Contact{" + "id=" + id +                ", email='" + email + '\'' +                '}';
     }
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         final Contact contact = new Contact(111, "email@email.com");
