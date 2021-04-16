@@ -16,7 +16,6 @@ public class UsageLog4j {
         boolean man = true;
         float height = 150.0f;
         double weight = 75.6;
-        LOG.debug("User info name : {}, age : {}, dateBirth : {}, monthBirth : {}, yearBirth : {}, man : {}, " +
-                "height : {}, weight : {}", name, age, dateBirth, monthBirth, yearBirth, man, height, weight);
+        LOG.debug("User info name : {}, age : {}, dateBirth : {}, monthBirth : {}, yearBirth : {}, man : {}, " + "height : {}, weight : {}", name, age, dateBirth, monthBirth, yearBirth, man, height, weight);
     }
 }

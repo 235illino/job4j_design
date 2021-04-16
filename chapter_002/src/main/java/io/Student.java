@@ -57,7 +57,7 @@ public class Student {
 
 
     public static void main(String[] args) {
-        final Student student = new Student(false, 123, "Ivan", new University(4), "reading","badminton");
+        final Student student = new Student(false, 123, "Ivan", new University(4), "reading", "badminton");
 
         final Gson gson = new GsonBuilder().create();
         System.out.println(gson.toJson(student));
