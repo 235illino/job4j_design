@@ -19,6 +19,7 @@ public class ConnectionDemo {
         }
     }
 
+
     public String getPr(String key) {
         return this.pr.getProperty(key);
     }
