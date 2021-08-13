@@ -16,9 +16,13 @@ public class Search {
     }
 
     public static List<Path> search(Path root, String ext) throws IOException {
-        SearchFiles searcher = new SearchFiles(p -> p.toFile().getName().endsWith(ext));
-        Files.walkFileTree(root, searcher);
-        return searcher.getPaths();
+        return search(root, ext, null);
+    }
+
+    public static List<Path> search(Path root, String include, String exclude) throws IOException {
+        SearchFiles searchFiles = new SearchFiles().include(include).exclude(exclude);
+        Files.walkFileTree(root, searchFiles);
+        return searchFiles.getPaths();
     }
 
 }
