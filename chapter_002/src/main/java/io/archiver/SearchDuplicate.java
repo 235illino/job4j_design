@@ -1,4 +1,6 @@
-package io;
+package io.archiver;
+
+import io.SearchD;
 
 import java.io.IOException;
 import java.nio.file.Files;

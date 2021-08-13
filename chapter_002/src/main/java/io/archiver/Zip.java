@@ -1,4 +1,6 @@
-package io;
+package io.archiver;
+import io.ArgZip;
+
 import java.io.*;
 import java.nio.file.Path;
 import java.util.List;

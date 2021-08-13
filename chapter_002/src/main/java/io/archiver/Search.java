@@ -1,4 +1,4 @@
-package io;
+package io.archiver;
 
 import java.io.IOException;
 import java.nio.file.Files;
