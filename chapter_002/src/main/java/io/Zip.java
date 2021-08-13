@@ -6,7 +6,7 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 public class Zip {
-    public void packFiles(List<Path> sources, File target) {
+    public void packFiles(List<Path> sources, Path target) {
         try (ZipOutputStream zip = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(target.toString())))) {
             for (Path p : sources) {
                 try {
@@ -34,7 +34,15 @@ public class Zip {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        ArgZip zipParameters = new ArgZip(args);
+        if (!zipParameters.valid()) {
+            throw new IllegalStateException("Wrong arguments. Usage java -jar Zip.jar -d SOURCE_PATH -e *.java -o project.zip");
+
+        }
+        List<Path> searchResult = Search.search(Path.of(zipParameters.directory()), null, zipParameters.exclude());
+
+        new Zip().packFiles(searchResult, Path.of(zipParameters.output()));
         new Zip().packSingleFile(
                 new File("./chapter_005/pom.xml"),
                 new File("./chapter_005/pom.zip")
